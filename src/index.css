@@ -12,11 +12,12 @@
   --color-black: #000000;
   --color-white: #ffffff;
 }
-html {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   padding: 10px;
   font-family: "Poppins", sans-serif;

@@ -1,12 +1,16 @@
 import styled from "styled-components";
+import { device } from "../../device";
 import { FaLocationArrow } from "react-icons/fa";
 import { BsFillPhoneFill, BsFillClockFill } from "react-icons/bs";
 
-export const HeaderContainer = styled.header`
+export const Container = styled.header`
   position: relative;
   width: 100%;
   height: fit-content;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 94%);
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 94%);
+  @media ${device.tablet} {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%);
+  }
 `;
 export const OverLayContainer = styled.div`
   position: absolute;
@@ -21,18 +25,24 @@ export const OverLayContainer = styled.div`
     rgba(0, 0, 0, 1) 100%
   );
 `;
+// Video
 export const Video = styled.video`
   width: 100%;
   height: 100%;
 `;
+// Logo
 export const Logo = styled.span`
   position: absolute;
   color: var(--color-white);
-  font-size: 3rem;
+  padding: 50px;
+  font-size: clamp(1rem, 2.7vw, 3.8rem);
   font-weight: 700;
-  padding: 30px;
+  @media ${device.tablet} {
+    padding: 20px;
+  }
 `;
-export const Aside = styled.aside`
+// Info text section
+export const InfoContainer = styled.section`
   position: absolute;
   width: 50%;
   height: 100%;
@@ -41,47 +51,66 @@ export const Aside = styled.aside`
   flex-direction: column;
   justify-content: center;
   color: var(--color-white);
+  /* The coffee joint */
   h1 {
+    margin: 0;
     font-family: var(--font-jost);
     color: var(--color-gold);
-    font-size: 3rem;
-    margin: 0;
+    font-size: clamp(1rem, 3vw, 4rem);
   }
+  /* Denver's First Licensed Consumption Lounge since 2018 */
   h2 {
     color: var(--color-white);
-    font-size: 1rem;
-    font-weight: 200;
+    font-size: clamp(0.8rem, 1.4vw, 3rem);
+    font-weight: 100;
+    margin-bottom: 1rem;
+    @media ${device.tablet} {
+      display: none;
+    }
   }
+  /* lounge */
   h3 {
+    margin: 0;
+    color: var(--color-white);
     font-family: var(--font-halant);
-    color: var(--color-white);
-    font-size: 5rem;
-    margin: 0;
+    font-size: clamp(2rem, 5vw, 10rem);
   }
+  /* address, phone, hour */
   h4 {
-    color: var(--color-white);
-    font-size: 0.8rem;
-    font-weight: 400;
     margin: 0;
+    color: var(--color-white);
+    font-size: clamp(0.7rem, 1vw, 4rem);
+    font-weight: 400;
+    @media ${device.tablet} {
+      font-weight: 200;
+    }
   }
+  /* wrap: icon + text */
   article {
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 10px;
   }
+  /* white line */
   .line {
     width: 150px;
     height: 3px;
     background: white;
+    margin-bottom: 1rem;
   }
 `;
+/* Icons */
+const icon = {
+  color: "var(--color-gold)",
+  fontSize: "clamp(0.7rem, 1vw, 4rem)",
+};
 export const LocationIcon = styled(FaLocationArrow)`
-  color: var(--color-gold);
+  ${icon}
 `;
 export const PhoneIcon = styled(BsFillPhoneFill)`
-  color: var(--color-gold);
+  ${icon}
 `;
 export const HourIcon = styled(BsFillClockFill)`
-  color: var(--color-gold);
+  ${icon}
 `;
