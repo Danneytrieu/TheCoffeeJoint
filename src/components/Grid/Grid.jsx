@@ -15,7 +15,6 @@ const GridContainer = styled.section`
     "do dont image image";
   text-align: center;
 `;
-//
 // Grid Area:
 const Video = styled.video`
   width: 100px;
