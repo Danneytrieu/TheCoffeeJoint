@@ -1,7 +1,8 @@
-import { Header } from "./components/Header/Header.jsx";
-import { AboutUs } from "./components/AboutUs/AboutUs.jsx";
+import { Header } from "./components/Header/Header";
+import { AboutUs } from "./components/AboutUs/AboutUs";
 import { Grid } from "./components/Grid/Grid";
 import { Shop } from "./components/Shop/Shop";
+import { Map } from "./components/Map/Map";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <AboutUs></AboutUs>
       <Grid/>
       <Shop/>
+      <Map/>
     </>
   );
 };
