@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { device } from "../../device";
 import grid1 from "../../assets/images/grid/grid-1.jpg";
 import grid2 from "../../assets/images/grid/grid-2.jpg";
 import grid3 from "../../assets/images/grid/grid-3.jpg";
@@ -12,6 +13,7 @@ import {
 const GridContainer = styled.div`
   display: grid;
   width: 100%;
+  height: 50vw;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
@@ -19,12 +21,27 @@ const GridContainer = styled.div`
     "instruction instruction picture picture"
     "do dont picture picture";
   text-align: center;
+  @media ${device.laptop} {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "video video"
+      "statistic shop"
+      "picture picture"
+      "instruction instruction"
+      "do dont";
+  } ;
 `;
 // Grid Area:
+const gridArea = {
+  minHeight: "400px",
+};
 const Video = styled.div`
+  ${gridArea}
   grid-area: video;
 `;
 const Statistic = styled.div`
+  ${gridArea}
   grid-area: statistic;
   display: flex;
   flex-direction: column;
@@ -45,10 +62,13 @@ const Statistic = styled.div`
   }
 `;
 const Shop = styled.div`
+  ${gridArea}
   grid-area: shop;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.5)),
     url(${grid1});
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -71,10 +91,13 @@ const Shop = styled.div`
   }
 `;
 const Instruction = styled.div`
+  ${gridArea}
   grid-area: instruction;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     url(${grid2});
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   text-align: start;
   display: flex;
   flex-direction: column;
@@ -89,20 +112,35 @@ const Instruction = styled.div`
     font-weight: 200;
     color: var(--color-black);
     opacity: 80%;
+    font-size: 1.2rem;
   }
 `;
 const Do = styled.div`
+  ${gridArea}
   grid-area: do;
   background: var(--color-darkgreen);
+  color: var(--color-white);
+  font-weight: 100;
+  font-size: 1.2rem;
+  padding: 30px;
 `;
 const Dont = styled.div`
+  ${gridArea}
   grid-area: dont;
+  background: var(--color-gold);
+  color: var(--color-white);
+  font-weight: 100;
+  font-size: 1.2rem;
+  padding: 30px;
 `;
 const Image = styled.div`
+  ${gridArea}
   grid-area: picture;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
     url(${grid3});
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 `;
 
 // icons
@@ -111,12 +149,14 @@ const CartIcon = styled(AiOutlineShoppingCart)`
   color: var(--color-gold);
 `;
 const DoIcon = styled(AiOutlineCheckCircle)`
-  font-size: 3rem;
-  color: var(--color-gold);
+  font-size: 5rem;
+  color: var(--color-white);
+  margin-bottom: 10px;
 `;
 const DontIcon = styled(AiOutlineStop)`
-  font-size: 3rem;
-  color: var(--color-gold);
+  font-size: 5rem;
+  color: var(--color-white);
+  margin-bottom: 10px;
 `;
 
 export const Grid = () => {
@@ -126,7 +166,7 @@ export const Grid = () => {
         <iframe
           src="https://www.youtube.com/embed/6ZQJ9fPOIbA"
           width="100%"
-          height="480"
+          height="100%"
           frameborder="0"
           allow="autoplay; encrypted-media"
           allowfullscreen
