@@ -1,6 +1,7 @@
 import { Header } from "./components/Header/Header.jsx";
 import { AboutUs } from "./components/AboutUs/AboutUs.jsx";
 import { Grid } from "./components/Grid/Grid";
+import { Shop } from "./components/Shop/Shop";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Header />
       <AboutUs></AboutUs>
       <Grid/>
+      <Shop/>
     </>
   );
 };
