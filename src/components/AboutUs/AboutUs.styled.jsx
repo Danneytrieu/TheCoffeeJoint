@@ -39,7 +39,7 @@ export const ContentContainer = styled.main`
     /* Consume cannabis in Denver */
     h3 {
       color: var(--color-gold);
-      font-size: clamp(1.6rem, 3vw, 5rem);
+      font-size: clamp(1.2rem, 3vw, 5rem);
       @media ${device.tablet} {
         font-weight: 500;
       }
@@ -53,11 +53,11 @@ export const ContentContainer = styled.main`
     /* Paragraph */
     p {
       font-weight: 200;
-      font-size: clamp(12px, 1.2rem, 30px);
+      font-size: clamp(14px, 1.3vw, 30px);
       color: var(--color-grey);
       margin: 30px 0;
       @media ${device.tablet} {
-        margin: 10px 0;
+        margin: 0;
       }
     }
     .line {
@@ -67,7 +67,7 @@ export const ContentContainer = styled.main`
     }
     button {
       padding: 10px;
-      font-size: 1.5rem;
+      font-size: clamp(14px, 1.3vw, 30px);
       font-weight: 300;
       width: 180px;
       border: 3px solid var(--color-gold);
