@@ -30,6 +30,15 @@ const GridContainer = styled.div`
       "picture picture"
       "instruction instruction"
       "do dont";
+  }
+  @media ${device.laptop} {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "video video"
+      "statistic statistic "
+      "shop shop"
+      "dont dont"
+      "do do ";
   } ;
 `;
 // Grid Area:
@@ -47,17 +56,17 @@ const Statistic = styled.div`
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   background: var(--color-vanilla);
   span {
     color: var(--color-gold);
     font-family: var(--font-roboto);
-    font-size: 8vw;
+    font-size: clamp(6rem, 8vw, 10rem);
   }
   h5 {
     color: var(--color-green);
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: clamp(0.8rem, 1.2rem, 3rem);
     font-weight: 400;
   }
 `;
@@ -74,7 +83,7 @@ const Shop = styled.div`
   text-align: center;
   justify-content: center;
   color: var(--color-white);
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
   > span {
@@ -83,8 +92,9 @@ const Shop = styled.div`
   div {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 5px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 300;
     text-transform: initial;
     cursor: pointer;
@@ -104,7 +114,9 @@ const Instruction = styled.div`
   justify-content: center;
   padding: 40px;
   font-size: 1.8rem;
-
+  @media ${device.laptop} {
+    display: none;
+  }
   span {
     color: var(--color-gold);
   }
@@ -117,21 +129,29 @@ const Instruction = styled.div`
 `;
 const Do = styled.div`
   ${gridArea}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   grid-area: do;
   background: var(--color-darkgreen);
   color: var(--color-white);
   font-weight: 100;
-  font-size: 1.2rem;
-  padding: 30px;
+  font-size: clamp(1rem, 1vw, 3rem);
+  padding: 40px;
 `;
 const Dont = styled.div`
   ${gridArea}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   grid-area: dont;
   background: var(--color-gold);
   color: var(--color-white);
   font-weight: 100;
-  font-size: 1.2rem;
-  padding: 30px;
+  font-size: clamp(1rem, 1vw, 3rem);
+  padding: 40px;
 `;
 const Image = styled.div`
   ${gridArea}
@@ -141,6 +161,9 @@ const Image = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  @media ${device.laptop}{
+    display: none;
+  }
 `;
 
 // icons
@@ -167,9 +190,10 @@ export const Grid = () => {
           src="https://www.youtube.com/embed/6ZQJ9fPOIbA"
           width="100%"
           height="100%"
-          frameborder="0"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
+          autoPlay={false}
+          loop={false}
+          frameBorder="0"
+          allowFullScreen
           title="video"
         />
       </Video>
