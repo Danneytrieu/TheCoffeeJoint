@@ -4,13 +4,48 @@ import shop1 from "../../assets/images/shop/shop-1.jpeg";
 import shop2 from "../../assets/images/shop/shop-2.jpeg";
 import shop3 from "../../assets/images/shop/shop-3.jpeg";
 import shop4 from "../../assets/images/shop/shop-4.jpeg";
+import { AiFillStar } from "react-icons/ai";
 
 const Container = styled.section`
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 30px;
+  color: var(--color-green);
+  gap: 20px;
+  background: var(--color-vanilla);
+`;
+const Products = styled.div`
+  display: flex;
+`;
+const ProductCard = styled.div`
+width: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  img {
+    border-radius: 10px;
+    width: 100%;
+  }
+  h6{
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  h7{
+    font-weight:200;
+  };
+  span{
+    font-size: 1.2rem;
+  }
+`;
+const Star = styled(AiFillStar)`
+  color: var(--color-gold);
+  font-size: 1.5rem;
+  margin-top: 20px;
 `;
 
 export const Shop = () => {
@@ -23,23 +58,23 @@ export const Shop = () => {
         <button>CANNABIS</button>
         <button>EDIBLES</button>
       </section>
-      <section>
-        <div>
+      <Products>
+        <ProductCard>
           <img src={shop1} alt="" />
           <div>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
+            <Star />
+            <Star />
+            <Star />
+            <Star />
+            <Star />
           </div>
           <h6>Danney Haze</h6>
           <h7>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem …
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           </h7>
           <span>$13.99</span>
-        </div>
-      </section>
+        </ProductCard>
+      </Products>
     </Container>
   );
 };

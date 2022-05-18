@@ -12,7 +12,7 @@ import {
 export const GridContainer = styled.div`
   display: grid;
   width: 100%;
-  height: 50vw;
+  height: fit-content;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
