@@ -1,5 +1,6 @@
-import { Header } from "./components/Header/Header";
+import { ParallaxProvider } from "react-scroll-parallax";
 import { AboutUs } from "./components/AboutUs/AboutUs";
+import { Header } from "./components/Header/Header";
 import { Grid } from "./components/Grid/Grid";
 import { Shop } from "./components/Shop/Shop";
 import { Map } from "./components/Map/Map";
@@ -8,15 +9,15 @@ import { Footer } from "./components/Footer/Footer";
 
 const App = () => {
   return (
-    <>
+    <ParallaxProvider>
       <Header />
-      <AboutUs></AboutUs>
+      <AboutUs/>
       <Grid/>
       <Shop/>
       <Map/>
       <Gallery/>
       <Footer/>
-    </>
+    </ParallaxProvider>
   );
 };
 

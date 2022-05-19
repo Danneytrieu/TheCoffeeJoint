@@ -22,10 +22,10 @@ export const ContentContainer = styled.main`
   @media ${device.laptop} {
     padding: 0 50px;
   }
-  /* Honey weed image */
+  /* Honey-weed image*/
   img {
     width: clamp(200px, 30vw, 600px);
-    height: 100%;
+    height: auto;
     margin-top: 150px;
     @media ${device.laptop} {
       display: none;

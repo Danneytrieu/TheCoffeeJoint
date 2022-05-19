@@ -1,11 +1,14 @@
 import React from "react";
 import honeyWeed from "../../assets/images/honeyweed.png";
 import * as S from "../AboutUs/AboutUs.styled";
+import { Parallax } from "react-scroll-parallax";
 
 export const AboutUs = () => {
   return (
     <S.Container>
+      <Parallax translateY={[0, 50]}>
       <h2>CONSUMPTION LOUNGE</h2>
+      </Parallax>
       <S.ContentContainer>
         <article>
           <div>
@@ -27,7 +30,9 @@ export const AboutUs = () => {
           </p>
           <button>DIRECTION</button>
         </article>
-        <img src={honeyWeed} alt="weed gold honey illustrator" />
+        <Parallax translateX={[20, 0]}>
+          <img src={honeyWeed} alt="weed gold honey illustrator" />
+        </Parallax>
       </S.ContentContainer>
     </S.Container>
   );
