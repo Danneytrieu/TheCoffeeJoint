@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import image1 from "../../assets/images/social/social-1.jpg";
 import image2 from "../../assets/images/social/social-2.jpg";
+import image3 from "../../assets/images/social/social-3.jpg";
+import image4 from "../../assets/images/social/social-4.jpg";
+import image5 from "../../assets/images/social/social-5.png";
 
 const Container = styled.section`
   width: 100%;
@@ -27,23 +30,44 @@ const Container = styled.section`
   }
 `;
 const image = {
-    position: 'absolute',
-    border: 'white solid 12px',
-    boxShadow: '1px 0.5px 5px grey',
-}
+  position: "absolute",
+  border: "white solid 12px",
+  boxShadow: "1px 0.5px 5px grey",
+};
 const Image1 = styled.img`
   ${image}
   width: 150px;
-  top: 200px;
+  top: 150px;
   left: 2%;
   transform: rotate(10deg);
 `;
 const Image2 = styled.img`
   ${image}
-  width: 150px;
-  bottom: 200px;
+  width: 180px;
+  top: 500px;
   left: 2%;
-  transform: rotate(10deg);
+  transform: rotate(-10deg);
+`;
+const Image3 = styled.img`
+  ${image}
+  width: 150px;
+  top: 600px;
+  left: 0%;
+  transform: rotate(20deg);
+`;
+const Image4 = styled.img`
+  ${image}
+  width: 200px;
+  top: 300px;
+  right: 2%;
+  transform: rotate(-10deg);
+`;
+const Image5 = styled.img`
+  ${image}
+  width: 250px;
+  top: 600px;
+  right: 1%;
+  transform: rotate(3deg);
 `;
 
 export const FAQ = () => {
@@ -51,6 +75,9 @@ export const FAQ = () => {
     <Container>
       <Image1 src={image1} alt="" />
       <Image2 src={image2} alt="" />
+      <Image3 src={image3} alt="" />
+      <Image4 src={image4} alt="" />
+      <Image5 src={image5} alt="" />
       <section>
         <span>FAQ</span>
         <details>
@@ -72,7 +99,7 @@ export const FAQ = () => {
         </details>
         <details>
           <summary>Is this real? Is this legal?</summary>
-          <article>Yes, we are real AND legal.</article>
+          <article>Yes, we are legit AND legal.</article>
         </details>
         <details>
           <summary>Is there an age requirement?</summary>
