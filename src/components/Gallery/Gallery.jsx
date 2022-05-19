@@ -10,11 +10,9 @@ import styled from "styled-components";
 const Container = styled.section`
   display: flex;
   width: 100%;
-  overflow-y: auto;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x mandatory;
+  overflow: scroll;
   img {
-    scroll-snap-align: center;
+    min-width: 100px;
   }
 `;
 
