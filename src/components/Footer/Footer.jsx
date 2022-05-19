@@ -1,24 +1,69 @@
 import React from "react";
 import styled from "styled-components";
+import logoImage from "../../assets/images/logo.png";
+import {
+  AiFillInstagram,
+  AiFillYoutube,
+  AiFillGoogleCircle,
+} from "react-icons/ai";
+import { FaFacebookF } from "react-icons/fa";
 
-const 
+const Container = styled.section`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+`;
+const FooterContainer = styled.section`
+  display: flex;
+  width: 100%;
+  background: var(--color-darkgreen);
+  padding: 150px;
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 20px;
+    margin: 0 20px;
+  }
+  img {
+    max-width: 200px;
+    border-radius: 5px;
+  }
+  h2 {
+    font-weight: 100;
+    font-size: 1rem;
+  }
+`;
+const CopyRight = styled.section`
+  width: 100%;
+  background: var(--color-darkergreen);
+  text-align: center;
+  font-weight: 100;
+  padding: 50px;
+`;
+
+// icons
+const InstagramIcon = styled(AiFillInstagram)``;
+const FacebookIcon = styled(FaFacebookF)``;
+const YoutubeIcon = styled(AiFillYoutube)``;
+const GoogleIcon = styled(AiFillGoogleCircle)``;
 
 export const Footer = () => {
   return (
-    <>
-      <section>
+    <Container>
+      <FooterContainer>
         {/* column 1 */}
         <div>
-          <img src="" alt="" />
+          <img src={logoImage} alt="" />
           <h2>
             Medical cannabis can be administered through various methods,
             including capsules, lozenges, tinctures, dermal patches.
           </h2>
           <article>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
+            <InstagramIcon /> <FacebookIcon /> <YoutubeIcon /> <GoogleIcon />
           </article>
         </div>
         {/* column 2 */}
@@ -44,10 +89,10 @@ export const Footer = () => {
           <h7>(720) 583-4657</h7>
           <h7>thecoffeejoint@yumaway.com</h7>
         </div>
-      </section>
-      <section>
+      </FooterContainer>
+      <CopyRight>
         <span>Copyright © YumaWay. All Rights Reserved.</span>
-      </section>
-    </>
+      </CopyRight>
+    </Container>
   );
 };
