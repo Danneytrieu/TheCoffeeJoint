@@ -43,7 +43,14 @@ export const Container = styled.section`
     padding: 15px 30px;
     font-size: clamp(0.8rem, 1.2vw, 4rem);
     font-weight: 100;
-    @media ${device.tablet}{
+    transition: all ease 0.2s;
+    cursor: pointer;
+    :hover {
+      background: var(--color-gold);
+      color: var(--color-white);
+      border: none;
+    }
+    @media ${device.tablet} {
       border-radius: 20px;
     }
   }
@@ -51,12 +58,12 @@ export const Container = styled.section`
 export const ProductContainer = styled.div`
   display: flex;
   gap: 70px;
-  @media ${device.laptop}{
-    gap: 50px
-  };
-  @media ${device.tablet}{
-    gap: 20px
-  };
+  @media ${device.laptop} {
+    gap: 50px;
+  }
+  @media ${device.tablet} {
+    gap: 20px;
+  } ;
 `;
 // Individual card
 export const ProductCard = styled.div`
@@ -67,6 +74,8 @@ export const ProductCard = styled.div`
   align-items: center;
   gap: 8px;
   text-align: center;
+  cursor: pointer;
+
   img {
     border-radius: 15%;
     width: 100%;
