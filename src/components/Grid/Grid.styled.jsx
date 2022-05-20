@@ -85,6 +85,7 @@ export const Shop = styled.div`
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
+  transition: transform 0.2s;
   > span {
     color: var(--color-gold);
   }

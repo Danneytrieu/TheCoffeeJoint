@@ -6,7 +6,7 @@ import { Parallax } from "react-scroll-parallax";
 export const AboutUs = () => {
   return (
     <S.Container>
-      <Parallax translateY={[0, 50]}>
+      <Parallax translateY={[0, 70]}>
       <h2>CONSUMPTION LOUNGE</h2>
       </Parallax>
       <S.ContentContainer>

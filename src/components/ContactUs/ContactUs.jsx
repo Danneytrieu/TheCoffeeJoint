@@ -36,13 +36,19 @@ const FormCard = styled.section`
     }
     button {
       border: none;
-      background: var(--color-white);
+      background: none;
+      color: white;
+      border: 2px white solid;
       font-size: 1.5rem;
       font-weight: 800;
       padding: 15px;
       min-width: 50%;
       margin: 0 auto;
       border-radius: 2px;
+      :hover {
+        background: var(--color-white);
+        color: var(--color-darkgreen);
+      }
     }
     textarea,
     input {
