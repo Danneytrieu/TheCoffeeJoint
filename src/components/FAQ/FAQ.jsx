@@ -1,83 +1,19 @@
 import React from "react";
-import styled from "styled-components";
 import image1 from "../../assets/images/social/social-1.jpg";
 import image2 from "../../assets/images/social/social-2.jpg";
 import image3 from "../../assets/images/social/social-3.jpg";
 import image4 from "../../assets/images/social/social-4.jpg";
 import image5 from "../../assets/images/social/social-5.png";
-
-const Container = styled.section`
-  width: 100%;
-  background: var(--color-vanilla);
-  position: relative;
-  section {
-    padding: 100px 300px;
-  }
-  span {
-    font-size: 4rem;
-    font-family: var(--font-halant);
-  }
-  details {
-    border-bottom: 1px black solid;
-    padding: 30px 0;
-  }
-  summary {
-    font-size: 2rem;
-  }
-  article {
-    font-size: 1rem;
-    font-weight: 200;
-  }
-`;
-const image = {
-  position: "absolute",
-  border: "white solid 12px",
-  boxShadow: "1px 0.5px 5px grey",
-};
-const Image1 = styled.img`
-  ${image}
-  width: 150px;
-  top: 150px;
-  left: 2%;
-  transform: rotate(10deg);
-`;
-const Image2 = styled.img`
-  ${image}
-  width: 180px;
-  top: 500px;
-  left: 2%;
-  transform: rotate(-10deg);
-`;
-const Image3 = styled.img`
-  ${image}
-  width: 150px;
-  top: 600px;
-  left: 0%;
-  transform: rotate(20deg);
-`;
-const Image4 = styled.img`
-  ${image}
-  width: 200px;
-  top: 300px;
-  right: 2%;
-  transform: rotate(-10deg);
-`;
-const Image5 = styled.img`
-  ${image}
-  width: 250px;
-  top: 600px;
-  right: 1%;
-  transform: rotate(3deg);
-`;
+import * as S from "./FAQ.styled";
 
 export const FAQ = () => {
   return (
-    <Container>
-      <Image1 src={image1} alt="" />
-      <Image2 src={image2} alt="" />
-      <Image3 src={image3} alt="" />
-      <Image4 src={image4} alt="" />
-      <Image5 src={image5} alt="" />
+    <S.Container>
+      <S.Image1 src={image1} alt="" />
+      <S.Image2 src={image2} alt="" />
+      <S.Image3 src={image3} alt="" />
+      <S.Image4 src={image4} alt="" />
+      <S.Image5 src={image5} alt="" />
       <section>
         <span>FAQ</span>
         <details>
@@ -122,6 +58,6 @@ export const FAQ = () => {
           </article>
         </details>
       </section>
-    </Container>
+    </S.Container>
   );
 };

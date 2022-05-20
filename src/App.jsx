@@ -7,6 +7,7 @@ import { Map } from "./components/Map/Map";
 import { Gallery } from "./components/Gallery/Gallery";
 import { Footer } from "./components/Footer/Footer";
 import { FAQ } from "./components/FAQ/FAQ";
+import { ContactUs } from "./components/ContactUs/ContactUs";
 
 const App = () => {
   return (
@@ -15,8 +16,9 @@ const App = () => {
       <AboutUs/>
       <Grid/>
       <Shop/>
-      <Map/>
+      <ContactUs/>
       <FAQ/>
+      <Map/>
       <Gallery/>
       <Footer/>
     </ParallaxProvider>
