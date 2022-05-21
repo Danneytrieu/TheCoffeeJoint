@@ -7,10 +7,14 @@ export const Container = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  img {
+    width: 25%;
+    box-shadow: 5px 5px 5px grey;
+  }
 `;
 export const FormCard = styled.section`
   min-height: 70%;
-  min-width: 40%;
+  min-width: 35%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -70,10 +74,7 @@ export const FormCard = styled.section`
     }
   }
 `;
-export const Image = styled.img`
-  width: 25%;
-  box-shadow: 5px 5px 5px grey;
-`;
+
 export const ThumbIcon = styled(AiFillLike)`
   font-size: 5rem;
   margin: 0 auto;

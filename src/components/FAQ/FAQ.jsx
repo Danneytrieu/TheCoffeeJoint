@@ -5,7 +5,6 @@ import image3 from "../../assets/images/social/social-3.jpg";
 import image4 from "../../assets/images/social/social-4.jpg";
 import image5 from "../../assets/images/social/social-5.png";
 import * as S from "./FAQ.styled";
-import { Parallax } from "react-scroll-parallax";
 
 export const FAQ = () => {
   return (
