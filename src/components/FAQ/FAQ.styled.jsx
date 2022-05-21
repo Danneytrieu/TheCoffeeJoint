@@ -19,6 +19,7 @@ export const Container = styled.section`
   details {
     border-bottom: 1px black solid;
     padding: 30px 0;
+    cursor: pointer;
   }
   summary {
     font-size: 2rem;

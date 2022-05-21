@@ -13,14 +13,14 @@ const App = () => {
   return (
     <ParallaxProvider>
       <Header />
-      <AboutUs/>
-      <Grid/>
-      <Shop/>
-      <ContactUs/>
-      <FAQ/>
-      <Map/>
-      <Gallery/>
-      <Footer/>
+      <AboutUs />
+      <Grid />
+      <Shop />
+      <ContactUs />
+      <FAQ />
+      <Map />
+      <Gallery />
+      <Footer />
     </ParallaxProvider>
   );
 };
