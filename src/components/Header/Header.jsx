@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <>
       <S.Container>
-        <S.Logo>TCJ..</S.Logo>
+        <S.Logo>TCJ.</S.Logo>
         <S.OverLayContainer>
           <S.InfoContainer>
             <h1>The Coffee Joint</h1>
