@@ -37,10 +37,10 @@ export const Footer = () => {
         {/* column 4 */}
         <div >
           <span>Contact Info</span>
-          <h7>1130 Yuma Court, Denver, CO 80204</h7>
-          <h7>(720) 583-4657</h7>
-          <h7>thecoffeejointco.com</h7>
-          <h7>thecoffeejoint@yumaway.com</h7>
+          <h5>1130 Yuma Court, Denver, CO 80204</h5>
+          <h5>(720) 583-4657</h5>
+          <h5>thecoffeejointco.com</h5>
+          <h5>thecoffeejoint@yumaway.com</h5>
         </div>
       </S.FooterContainer>
       <S.CopyRight>

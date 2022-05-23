@@ -12,7 +12,9 @@ export const Header = () => {
             <h1>The Coffee Joint</h1>
             <h3>Lounge</h3>
             <div className="line" />
-            <h2>Denver's First Licensed Consumption Lounge <br /> since 2018</h2>
+            <h2>
+              Denver's First Licensed Consumption Lounge <br /> since 2018
+            </h2>
             <section>
               <article>
                 <S.LocationIcon />
@@ -29,8 +31,8 @@ export const Header = () => {
             </section>
           </S.InfoContainer>
         </S.OverLayContainer>
-        <S.Video loop="true" autoPlay="true">
-          <source src={introVideo}  type="video/mp4" />
+        <S.Video autoPlay loop muted>
+          <source src={introVideo} type="video/mp4" />
         </S.Video>
       </S.Container>
     </>

@@ -26,10 +26,10 @@ export const Shop = () => {
             <S.Star />
             <S.Star />
           </div>
-          <h6>Danney Haze</h6>
-          <h7>
+          <h4>Danney Haze</h4>
+          <h5>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          </h7>
+          </h5>
           <span>$13.99</span>
         </S.ProductCard>
         <S.ProductCard>
@@ -41,10 +41,10 @@ export const Shop = () => {
             <S.Star />
             <S.Star />
           </div>
-          <h6>Danney Haze</h6>
-          <h7>
+          <h4>Danney Haze</h4>
+          <h5>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          </h7>
+          </h5>
           <span>$13.99</span>
         </S.ProductCard>
         <S.ProductCard>
@@ -56,10 +56,10 @@ export const Shop = () => {
             <S.Star />
             <S.Star />
           </div>
-          <h6>Danney Haze</h6>
-          <h7>
+          <h4>Danney Haze</h4>
+          <h5>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          </h7>
+          </h5>
           <span>$13.99</span>
         </S.ProductCard>
         <S.ProductCard>
@@ -71,10 +71,10 @@ export const Shop = () => {
             <S.Star />
             <S.Star />
           </div>
-          <h6>Danney Haze</h6>
-          <h7>
+          <h4>Danney Haze</h4>
+          <h5>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          </h7>
+          </h5>
           <span>$13.99</span>
         </S.ProductCard>
       </S.ProductContainer>

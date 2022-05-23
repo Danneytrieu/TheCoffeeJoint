@@ -80,11 +80,11 @@ export const ProductCard = styled.div`
     border-radius: 15%;
     width: 100%;
   }
-  h6 {
+  h4 {
     font-size: clamp(1rem, 1.5vw, 5rem);
     font-weight: 400;
   }
-  h7 {
+  h5 {
     font-size: clamp(0.8rem, 1vw, 5rem);
     font-weight: 200;
   }

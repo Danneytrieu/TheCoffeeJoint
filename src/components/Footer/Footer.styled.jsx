@@ -50,7 +50,7 @@ export const FooterContainer = styled.section`
     text-decoration: none;
     font-weight: 100;
   }
-  h7 {
+  h5 {
     font-weight: 100;
     color: var(--color-gold);
     @media ${device.tablet}{
