@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <>
       <S.Container>
-        <S.Logo>TCJ.</S.Logo>
+        <S.Logo>TCJ..</S.Logo>
         <S.OverLayContainer>
           <S.InfoContainer>
             <h1>The Coffee Joint</h1>
@@ -30,7 +30,7 @@ export const Header = () => {
           </S.InfoContainer>
         </S.OverLayContainer>
         <S.Video loop="true" autoPlay="true">
-          <source src={introVideo} type="video/mp4" />
+          <source src={introVideo}  type="video/mp4" />
         </S.Video>
       </S.Container>
     </>
