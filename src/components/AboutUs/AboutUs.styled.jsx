@@ -73,6 +73,12 @@ export const ContentContainer = styled.main`
       border: 3px solid var(--color-gold);
       background: var(--color-white);
       color: var(--color-gold);
+      cursor: pointer;
+      transition: all ease 0.2s;
+      :hover {
+        background: var(--color-gold);
+        color: var(--color-white);
+      }
     }
   }
 `;

@@ -1,7 +1,6 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import flyer from "../../assets/images/flyer.jpg";
-import { Parallax } from "react-scroll-parallax";
 import * as S from "./ContactUs.styled";
 
 export const ContactUs = () => {
@@ -9,7 +8,9 @@ export const ContactUs = () => {
   if (state.succeeded) {
     return (
       <S.Container>
-        <img className="img" src={flyer} alt="" />
+        <S.Parallaxes translateX={[0, -10]}>
+          <img src={flyer} alt="" />
+        </S.Parallaxes>
         <S.FormCard>
           <S.ThumbIcon />
           Thanks for reaching out!
@@ -19,9 +20,9 @@ export const ContactUs = () => {
   }
   return (
     <S.Container>
-      {/* <Parallax translateX={[50, 0]}> */}
-        <img className="img" src={flyer} alt="" />
-      {/* </Parallax> */}
+      <S.Parallaxes translateX={[10, -10]} >
+        <img src={flyer} alt="" />
+      </S.Parallaxes>
 
       <S.FormCard>
         <form onSubmit={handleSubmit}>

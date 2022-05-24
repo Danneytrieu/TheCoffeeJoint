@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { AiFillLike } from "react-icons/ai";
+import { Parallax } from "react-scroll-parallax";
 
 export const Container = styled.section`
   width: 100%;
@@ -7,14 +8,19 @@ export const Container = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  img {
-    width: 25%;
-    box-shadow: 5px 5px 5px grey;
-  }
+
+img {
+  width: 30%;
+  box-shadow: 5px 5px 5px grey;}
+`;
+export const Parallaxes = styled(Parallax)`
+  position: absolute;
+  z-index: -1;
+
 `;
 export const FormCard = styled.section`
   min-height: 70%;
-  min-width: 35%;
+  min-width: 30%;
   display: flex;
   flex-direction: column;
   text-align: center;
