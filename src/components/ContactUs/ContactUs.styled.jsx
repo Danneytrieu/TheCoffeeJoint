@@ -13,9 +13,8 @@ export const Container = styled.section`
 export const FormContainer = styled.section`
   display: flex;
   justify-content: center;
-  align-items: center;
-
-  img {
+  align-items: center;  
+  >img {
     width: 30%;
     box-shadow: 5px 5px 5px grey;
   }
@@ -23,10 +22,14 @@ export const FormContainer = styled.section`
 export const Parallaxes = styled(Parallax)`
   position: absolute;
   z-index: -1;
+  > img {
+    width: 30%;
+    box-shadow: 5px 5px 5px grey;
+  }
 `;
 export const FormCard = styled.section`
   min-height: 70%;
-  min-width: 30%;
+  min-width: 30vw;
   display: flex;
   flex-direction: column;
   text-align: center;

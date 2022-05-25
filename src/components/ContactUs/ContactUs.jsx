@@ -8,24 +8,25 @@ export const ContactUs = () => {
   const [state, handleSubmit] = useForm("xayvagjq");
   if (state.succeeded) {
     return (
-      <S.FormContainer>
-        <S.Parallaxes translateX={[0, -10]}>
-          <img src={flyer} alt="" />
-        </S.Parallaxes>
-        <S.FormCard>
-          <S.ThumbIcon />
-          Thanks for reaching out!
-        </S.FormCard>
-      </S.FormContainer>
+      <></>
+      // <S.FormContainer>
+      //   <S.Parallaxes translateX={[0, -10]}>
+      //     <img src={flyer} alt="" />
+      //   </S.Parallaxes>
+      //   <S.FormCard>
+      //     <S.ThumbIcon />
+      //     Thanks for reaching out!
+      //   </S.FormCard>
+      // </S.FormContainer>
     );
   }
   return (
     <S.Container>
       <S.FormContainer>
 
-        <S.Parallaxes translateX={[10, -15]}>
-        <img src={flyer} alt="" />
-      </S.Parallaxes>
+        <S.Parallaxes translateX={[30, -20]}>
+          <img src={flyer} alt="" />
+        </S.Parallaxes>
 
         <S.FormCard>
           <form onSubmit={handleSubmit}>
@@ -54,10 +55,6 @@ export const ContactUs = () => {
           </form>
         </S.FormCard>
 
-        <S.Parallaxes translateX={[60, 85]}>
-        <img src={flyer} alt="" />
-      </S.Parallaxes>
-      
       </S.FormContainer>
       <Calendar />
     </S.Container>
