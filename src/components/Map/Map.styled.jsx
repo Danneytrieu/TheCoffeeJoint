@@ -25,6 +25,7 @@ export const Container = styled.section`
     font-weight: 100;
   }
   div {
+
     width: 50%;
     @media ${device.laptop}{
       width: 100%;

@@ -3,20 +3,26 @@ import { AiFillLike } from "react-icons/ai";
 import { Parallax } from "react-scroll-parallax";
 
 export const Container = styled.section`
+  display: flex;
+  flex-direction: column;
+  padding: 150px;
+  gap: 50px;
   width: 100%;
-  padding: 150px 0;
+`;
+
+export const FormContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
 
-img {
-  width: 30%;
-  box-shadow: 5px 5px 5px grey;}
+  img {
+    width: 30%;
+    box-shadow: 5px 5px 5px grey;
+  }
 `;
 export const Parallaxes = styled(Parallax)`
   position: absolute;
   z-index: -1;
-
 `;
 export const FormCard = styled.section`
   min-height: 70%;
@@ -76,7 +82,8 @@ export const FormCard = styled.section`
       font-weight: 600;
     }
     p {
-      font-weight: 300;
+      font-weight: 100;
+      line-height: 1.5rem;
     }
   }
 `;
