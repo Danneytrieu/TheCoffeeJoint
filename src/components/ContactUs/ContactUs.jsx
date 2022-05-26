@@ -27,7 +27,7 @@ export const ContactUs = () => {
         <S.Parallaxes translateX={[30, -20]}>
           <img src={flyer} alt="" />
         </S.Parallaxes>
-
+{/*  */}
         <S.FormCard>
           <form onSubmit={handleSubmit}>
             <div>
