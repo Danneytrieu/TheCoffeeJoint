@@ -80,5 +80,12 @@ export const ContentContainer = styled.main`
         color: var(--color-white);
       }
     }
+    a {
+      text-decoration: none;
+      color: var(--color-gold);
+      :hover {
+        color: var(--color-white);
+      }
+    }
   }
 `;

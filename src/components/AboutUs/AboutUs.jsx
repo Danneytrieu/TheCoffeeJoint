@@ -7,7 +7,7 @@ export const AboutUs = () => {
   return (
     <S.Container>
       <Parallax translateY={[0, 70]}>
-      <h2>CONSUMPTION LOUNGE</h2>
+        <h2>CONSUMPTION LOUNGE</h2>
       </Parallax>
       <S.ContentContainer>
         <article>
@@ -28,7 +28,14 @@ export const AboutUs = () => {
             passion to de-stigmatize cannabis consumption and are available to
             answer any questions!
           </p>
-          <button>DIRECTION</button>
+
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.google.com/maps/dir//the+coffee+joint/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x876c7f4b51569687:0xb8e67a05179bf2c4?sa=X&ved=2ahUKEwjo1fX05Z74AhVGSzABHUebCy0Q9Rd6BAhLEAU"
+          >
+            <button>DIRECTION</button>
+          </a>
         </article>
         <Parallax translateX={[20, 0]}>
           <img src={honeyWeed} alt="weed gold honey illustrator" />
