@@ -23,14 +23,16 @@ export const Grid = () => {
           mollis ornare.
         </h5>
       </S.Statistic>
-      <S.Shop>
-        <span>Full Price of</span>
-        <h5>Marijuana products</h5>
-        <div>
-          <S.CartIcon />
-          <span>Shop Now</span>
-        </div>
-      </S.Shop>
+      <a target="_blank" rel="noreferrer" href="https://www.yumaway.com/locations/1136yuma">
+        <S.Shop>
+          <span>Full Price of</span>
+          <h5>Marijuana products</h5>
+          <div>
+            <S.CartIcon />
+            <span>Shop Now</span>
+          </div>
+        </S.Shop>
+      </a>
       <S.Instruction>
         <span>FIRST TIMER?</span>
         <p>Checkout our rules</p>
