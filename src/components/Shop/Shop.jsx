@@ -8,7 +8,7 @@ import * as S from "./Shop.styled";
 export const Shop = () => {
   return (
     <S.Container>
-      <h2>Our Dispensary</h2>
+      <h2>YumaWay Dispensary</h2>
       <div className="line" />
       <h3>Popular Cannabis Products</h3>
       <section>

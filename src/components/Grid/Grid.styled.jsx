@@ -20,6 +20,10 @@ export const GridContainer = styled.div`
     "instruction instruction picture picture"
     "do dont picture picture";
   text-align: center;
+
+  a {
+    text-decoration: none;
+  }
   @media ${device.laptop} {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(5, 1fr);
@@ -86,6 +90,7 @@ export const Shop = styled.div`
   font-weight: 400;
   text-transform: uppercase;
   transition: transform 0.2s;
+  
   > span {
     color: var(--color-gold);
   }

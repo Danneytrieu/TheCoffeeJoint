@@ -23,7 +23,11 @@ export const Grid = () => {
           mollis ornare.
         </h5>
       </S.Statistic>
-      <a target="_blank" rel="noreferrer" href="https://www.yumaway.com/locations/1136yuma">
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://www.yumaway.com/locations/1136yuma"
+      >
         <S.Shop>
           <span>Full Price of</span>
           <h5>Marijuana products</h5>
