@@ -37,7 +37,7 @@ const Container = styled.details`
         <button></button>
       </summary>
       <div
-        class="smgc-calendar-placeholder"
+        className="smgc-calendar-placeholder"
         id="smgc-cal-YTKB9oe0cfrjQesZSPpX"
       ></div>
     </Container>

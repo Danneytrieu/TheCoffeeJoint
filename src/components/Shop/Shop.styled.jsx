@@ -12,53 +12,25 @@ export const Container = styled.section`
   color: var(--color-green);
   background: var(--color-vanilla);
   text-align: center;
-  /* Heading */
-  h2 {
-    font-weight: 200;
-    font-size: 1.3rem;
-  }
-  .line {
-    width: 150px;
-    height: 3px;
-    background: var(--color-green);
-    margin: 10px;
-  }
+
   /* Subheading */
   h3 {
     color: var(--color-gold);
     font-size: clamp(1.7rem, 3vw, 5rem);
     font-weight: 400;
   }
-  /* buttons */
   section {
     display: flex;
     gap: 20px;
     margin: 30px 0 50px;
   }
-  button {
-    border: var(--color-green) 1px solid;
-    border-radius: 50px;
-    background: var(--color-white);
-    color: var(--color-green);
-    padding: 15px 30px;
-    font-size: clamp(0.8rem, 1.2vw, 4rem);
-    font-weight: 100;
-    transition: all ease 0.2s;
-    cursor: pointer;
-    :hover {
-      background: var(--color-gold);
-      color: var(--color-white);
-      border: none;
-    }
-    @media ${device.tablet} {
-      border-radius: 20px;
-    }
-  }
+
 `;
 export const ProductContainer = styled.div`
   display: flex;
   gap: 70px;
   @media ${device.laptop} {
+    flex-direction: column;
     gap: 50px;
   }
   @media ${device.tablet} {
@@ -67,10 +39,10 @@ export const ProductContainer = styled.div`
 `;
 // Individual card
 export const ProductCard = styled.div`
-  min-width: 15vw;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: baseline;
   align-items: center;
   gap: 8px;
   text-align: center;
@@ -78,16 +50,14 @@ export const ProductCard = styled.div`
 
   img {
     border-radius: 15%;
-    width: 100%;
+    width: 300px;
+    height: 300px;
   }
   h4 {
     font-size: clamp(1rem, 1.5vw, 5rem);
     font-weight: 400;
   }
-  h5 {
-    font-size: clamp(0.8rem, 1vw, 5rem);
-    font-weight: 200;
-  }
+
   span {
     font-size: 1.2rem;
   }
