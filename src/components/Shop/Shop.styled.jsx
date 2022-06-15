@@ -22,9 +22,29 @@ export const Container = styled.section`
   section {
     display: flex;
     gap: 20px;
-    margin: 30px 0 50px;
+    margin: 30px 0 30px;
   }
-
+  /* buttons */
+  .button {
+    margin-top: 50px;
+    border: var(--color-green) 1px solid;
+    border-radius: 50px;
+    background: var(--color-white);
+    color: var(--color-green) !important;
+    padding: 15px 30px;
+    font-size: clamp(0.8rem, 0.9vw, 4rem);
+    font-weight: 100 !important;
+    transition: all ease 0.2s;
+    cursor: pointer;
+    :hover {
+      background: var(--color-gold);
+      color: var(--color-white) !important;
+      border: none;
+    }
+    @media ${device.tablet} {
+      border-radius: 20px;
+    }
+  }
 `;
 export const ProductContainer = styled.div`
   display: flex;
@@ -57,7 +77,10 @@ export const ProductCard = styled.div`
     font-size: clamp(1rem, 1.5vw, 5rem);
     font-weight: 400;
   }
-
+  h5 {
+    font-size: clamp(0.8rem, 1vw, 5rem);
+    font-weight: 100;
+  }
   span {
     font-size: 1.2rem;
   }

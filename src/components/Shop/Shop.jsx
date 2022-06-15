@@ -194,6 +194,14 @@ export function BasicTabs() {
               />
             </S.ProductContainer>
           </TabPanel>
+
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://yumaway.com/locations/menu/17?"
+          >
+            <button className="button">See more</button>
+          </a>
         </Box>
       </section>
     </S.Container>
