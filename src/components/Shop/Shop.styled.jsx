@@ -27,19 +27,18 @@ export const Container = styled.section`
   /* buttons */
   .button {
     margin-top: 50px;
-    border: var(--color-green) 1px solid;
+    border: var(--color-gold) 1px solid;
     border-radius: 50px;
-    background: var(--color-white);
-    color: var(--color-green) !important;
+    background: var(--color-gold);
+    color: var(--color-white) !important;
     padding: 15px 30px;
     font-size: clamp(0.8rem, 0.9vw, 4rem);
     font-weight: 100 !important;
     transition: all ease 0.2s;
     cursor: pointer;
     :hover {
-      background: var(--color-gold);
-      color: var(--color-white) !important;
-      border: none;
+      background: var(--color-white);
+      color: var(--color-green) !important;
     }
     @media ${device.tablet} {
       border-radius: 20px;
@@ -72,6 +71,9 @@ export const ProductCard = styled.div`
     border-radius: 15%;
     width: 300px;
     height: 300px;
+    &:hover {
+      box-shadow: 1px 1px 1px grey;
+    }
   }
   h4 {
     font-size: clamp(1rem, 1.5vw, 5rem);
