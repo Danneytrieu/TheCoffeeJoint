@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { AiFillLike } from "react-icons/ai";
 import { Parallax } from "react-scroll-parallax";
+import { device } from "../../device";
 
 export const Container = styled.section`
   display: flex;
@@ -17,6 +18,7 @@ export const FormContainer = styled.section`
   >img {
     width: 30%;
     box-shadow: 5px 5px 5px grey;
+    
   }
 `;
 export const Parallaxes = styled(Parallax)`
@@ -29,7 +31,7 @@ export const Parallaxes = styled(Parallax)`
 `;
 export const FormCard = styled.section`
   min-height: 70%;
-  min-width: 30vw;
+  min-width: 40vw;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -37,6 +39,10 @@ export const FormCard = styled.section`
   background-color: var(--color-darkgreen);
   color: var(--color-white);
   box-shadow: 5px 5px 5px grey;
+  @media ${device.tablet} {
+    min-width: 70vw;
+  }
+
   form {
     display: flex;
     flex-direction: column;

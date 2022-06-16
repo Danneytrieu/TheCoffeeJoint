@@ -7,12 +7,6 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import * as S from "./Shop.styled";
 
-// <section>
-//   <button>CBD OILS</button>
-//   <button>CANNABIS</button>
-//   <button>EDIBLES</button>
-// </section>
-
 export function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -80,7 +74,7 @@ export function BasicTabs() {
                 sx={{
                   fontSize: "2rem",
                 }}
-                label="FLOWERS"
+                label="CONCENTRATES"
                 {...a11yProps(1)}
               />
               <Tab
@@ -127,36 +121,36 @@ export function BasicTabs() {
             </S.ProductContainer>
           </TabPanel>
 
-          {/* Tab: Flowers */}
+          {/* Tab: CONCENTRATES */}
           <TabPanel value={value} index={1}>
             <S.ProductContainer>
               <ProductCard
-                url="https://www.iheartjane.com/embed/stores/17/products/633572/training-day?recommended=false&fromMenu=true&blockScrollToTop=true"
-                img="https://uploads.iheartjane.com/cdn-cgi/image/width=400,fit=scale-down,format=auto,metadata=none/uploads/fe9bf3f5-0295-4836-9b2c-85dc9f608827.jpg"
-                name="Training Day (14 gram)"
-                description="Training Day is a deceptively potent (THC levels as high as 21%), not-for-beginners, hazily blissful, powerfully relaxing and potentially immobilizing."
-                price="$42.00"
+                url="https://www.iheartjane.com/embed/stores/17/products/852305/binske-french-glue?recommended=false&fromMenu=true&blockScrollToTop=true"
+                img="https://product-assets.iheartjane.com/cdn-cgi/image/width=400,fit=scale-down,format=auto,metadata=none/photos/dd/31/dd319c36-99e8-42ad-91c5-6397859dddb2.png"
+                name="French Glue"
+                description="Freshly harvested plant material flash frozen at -85F and extracted to create a golden yellow hash that has no rivals in terms of terpene aroma and taste."
+                price="$34.00"
               />
               <ProductCard
-                url="https://www.iheartjane.com/embed/stores/17/products/1063/white-walker-kush?recommended=false&fromMenu=true&blockScrollToTop=true"
-                img="https://uploads.iheartjane.com/cdn-cgi/image/width=400,fit=scale-down,format=auto,metadata=none/uploads/f480f941-03ca-42ce-b238-6217ca38adac.jpg"
-                name="White Walker Kush (1 gram)"
-                description="White Walker Kush, often confused with the award-winning Whitewalker OG,relax-at-home hybrid cross between White Widow and Skywalker. "
-                price="$9.00"
+                url="https://www.iheartjane.com/embed/stores/17/products/986395/denver-dab-co-bazookies-og?recommended=false&fromMenu=true&blockScrollToTop=true"
+                img="https://product-assets.iheartjane.com/default-photos/extract/waxes.png"
+                name="Bazookies OZ"
+                description="A strain specific cannabis extract by Denver Dab Co."
+                price="$18.00"
               />
               <ProductCard
-                url="https://www.iheartjane.com/embed/stores/17/products/327001/red-headed-stranger?recommended=false&fromMenu=true&blockScrollToTop=true"
-                img="https://uploads.iheartjane.com/cdn-cgi/image/width=400,fit=scale-down,format=auto,metadata=none/uploads/3f43ff67-aa74-469d-8112-018a88c8a763.jpeg"
-                name="Red Headed Stranger (1 gram)"
-                description="Red Headed Stranger appears to be a pleasantly potent (THC levels as high as 17%), happy, energetic, creative and focused."
-                price="$9.00"
+                url="https://www.iheartjane.com/embed/stores/17/products/1047412/denver-dab-co-berry-haze?recommended=false&fromMenu=true&blockScrollToTop=true"
+                img="https://uploads.iheartjane.com/cdn-cgi/image/width=400,fit=scale-down,format=auto,metadata=none/uploads/05cf5f6d-adf9-4e4f-84b2-0ee1f6ca85bf.jpg"
+                name="Berry Haze"
+                description="WITH A GRANULATED SUGAR OR WET SAND TEXTURE, AND GOLD AND AMBER IN COLOR - SUGAR WAX IS CREATED THROUGH A SPECIFIC SOLVENT MIX AND PURGING PROCESS, SLIGHTLY DIFFERENT FROM SHATTER OR BATTER. "
+                price="$18.00"
               />
               <ProductCard
-                url="https://www.iheartjane.com/embed/stores/17/products/93/critical-mass?recommended=false&fromMenu=true&blockScrollToTop=true"
-                img="https://uploads.iheartjane.com/cdn-cgi/image/width=400,fit=scale-down,format=auto,metadata=none/uploads/9cc76810-bcf1-4521-81f2-0a9a9ee51fcc.jpg"
-                name="Critical Mass (1 gram)"
-                description="Critical Mass is a reasonably potent, 80/20, Indica-Dominant, late-afternoon-into-evening hybrid with an earthy, herbal aroma and taste."
-                price="$8.00"
+                url="https://www.iheartjane.com/embed/stores/17/products/815334/kush-masters-papaya-mac-2-g?recommended=false&fromMenu=true&blockScrollToTop=true"
+                img="https://product-assets.iheartjane.com/cdn-cgi/image/width=400,fit=scale-down,format=auto,metadata=none/photos/06/a9/06a90a42-f445-4edb-8218-f362126586f1.jpeg"
+                name="Papaya MAC [2g]"
+                description="With a creamy “butter” texture wax is known for its aroma and great flavor as well as being the most user-friendly form of Cured BHO"
+                price="$33.00"
               />
             </S.ProductContainer>
           </TabPanel>

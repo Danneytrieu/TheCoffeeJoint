@@ -9,7 +9,11 @@ export const Footer = () => {
       <S.FooterContainer>
         {/* column 1 */}
         <div>
+          <a
+            href="/"
+          >
           <img src={logoImage} alt="" />
+          </a>
           <h2>
             As part of Yuma Way Cannabis, the staff at The Coffee Joint share a
             passion to de-stigmatize cannabis consumption and are available to
