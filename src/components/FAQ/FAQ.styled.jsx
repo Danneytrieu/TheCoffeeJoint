@@ -7,7 +7,7 @@ export const Container = styled.section`
   position: relative;
   section {
     padding: 100px 300px;
-    @media ${device.laptop}{
+    @media ${device.laptop} {
       padding: 100px 50px;
     }
   }
@@ -27,6 +27,8 @@ export const Container = styled.section`
   article {
     font-size: 1rem;
     font-weight: 200;
+    margin-top: 1rem;
+    line-height: 2rem;
   }
   img {
     @media ${device.laptop} {
