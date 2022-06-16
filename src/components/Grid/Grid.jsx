@@ -26,7 +26,7 @@ export const Grid = () => {
       <a
         target="_blank"
         rel="noreferrer"
-        href="https://www.yumaway.com/locations/1136yuma"
+        href="https://www.yumaway.com/locations/menu/17?"
       >
         <S.Shop>
           <span>Full Price of</span>

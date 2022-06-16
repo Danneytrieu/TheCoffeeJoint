@@ -1,8 +1,6 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import flyer from "../../assets/images/flyer.jpg";
 import * as S from "./ContactUs.styled";
-import { Calendar } from "../Calendar/Calendar";
 
 export const ContactUs = () => {
   const [state, handleSubmit] = useForm("xayvagjq");
@@ -49,7 +47,6 @@ export const ContactUs = () => {
 
       </S.FormContainer>
 
-      <Calendar />
       
     </S.Container>
   );

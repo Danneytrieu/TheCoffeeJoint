@@ -1,8 +1,9 @@
-import React from 'react'
-import styled from 'styled-components';
-import eventCalendar from "../../assets/images/eventCalendar.png"
+import React from "react";
+import styled from "styled-components";
+import eventCalendar from "../../assets/images/eventCalendar.png";
 
 const Container = styled.details`
+margin: 200px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +29,7 @@ const Container = styled.details`
   }
 `;
 
- export const Calendar = () => {
+const Events = () => {
   return (
     <Container>
       <summary>
@@ -42,4 +43,6 @@ const Container = styled.details`
       ></div>
     </Container>
   );
-}
+};
+
+export default Events;

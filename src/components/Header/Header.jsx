@@ -10,7 +10,7 @@ export const Header = () => {
         <S.OverLayContainer>
           <S.InfoContainer>
             <h1>The Coffee Joint</h1>
-            <h3>Lounge</h3>
+            <h3>Consumption Lounge</h3>
             <div className="line" />
             <h2>
               Denver's First Licensed Consumption Lounge <br /> since 2018

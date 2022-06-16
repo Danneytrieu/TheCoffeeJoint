@@ -83,13 +83,7 @@ export const Footer = () => {
           >
             Oil
           </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://yumaway.com/locations/menu/17?"
-          >
-            Buds
-          </a>
+         
         </div>
 
         {/* column 4 */}

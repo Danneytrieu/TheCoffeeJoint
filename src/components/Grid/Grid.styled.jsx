@@ -153,8 +153,8 @@ export const Dont = styled.div`
   justify-content: center;
   grid-area: dont;
   background: var(--color-gold);
-  color: var(--color-white);
-  font-weight: 100;
+  color: var(--color-darkgreen);
+  font-weight: 200;
   font-size: clamp(1rem, 1vw, 3rem);
   padding: 40px;
 `;

@@ -4,7 +4,7 @@ import { AboutUs } from "./components/AboutUs/AboutUs";
 import { Header } from "./components/Header/Header";
 import { Grid } from "./components/Grid/Grid";
 import { BasicTabs } from "./components/Shop/Shop";
-import { Map } from "./components/Map/Map";
+import Events from "./components/Events/Events";
 import { Gallery } from "./components/Gallery/Gallery";
 import { Footer } from "./components/Footer/Footer";
 import { FAQ } from "./components/FAQ/FAQ";
@@ -19,9 +19,9 @@ const App = () => {
       <AboutUs />
       <Grid />
       <BasicTabs />
-      <ContactUs />
+      <Events/>
       <FAQ />
-      <Map />
+      <ContactUs />
       <Gallery />
       <Footer />
     </ParallaxProvider>
