@@ -21,7 +21,7 @@ export const AboutUs = () => {
             patrons can vaporizer flower, consume edibles, and dab concentrates
             using vape pens or an electric nail. Our staff members can also
             provide information about cannabinoids, terpene profiles, and
-            cannabis consumption.
+            cannabis consumption..
             <br />
             <br />
             As part of Yuma Way Cannabis, the staff at The Coffee Joint share a
