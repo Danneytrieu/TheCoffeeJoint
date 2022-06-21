@@ -26,7 +26,7 @@ export const Header = () => {
               </article>
               <article>
                 <S.HourIcon />
-                <h4>Daily: 10:00 am - 6:00 pm</h4>
+                <h4>Daily: 8:30 am - 9:30 pm</h4>
               </article>
             </section>
           </S.InfoContainer>

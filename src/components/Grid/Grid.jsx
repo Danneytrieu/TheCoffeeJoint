@@ -17,11 +17,8 @@ export const Grid = () => {
         />
       </S.Video>
       <S.Statistic>
-        <span>350+</span>
-        <h5>
-          Cras non dui id ex mattis vehicula. Nullam posuere ligula non libero
-          mollis ornare.
-        </h5>
+        <span>1st</span>
+        <h5>Denver's First Licensed Consumption Lounge since 2018</h5>
       </S.Statistic>
       <a
         target="_blank"

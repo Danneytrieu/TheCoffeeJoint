@@ -6,18 +6,19 @@ export const ContactUs = () => {
   const [state, handleSubmit] = useForm("xayvagjq");
   if (state.succeeded) {
     return (
-      <S.FormContainer>
-        <S.FormCard>
-          <S.ThumbIcon />
-          Thanks for reaching out!
-        </S.FormCard>
-      </S.FormContainer>
+      <S.Container>
+        <S.FormContainer>
+          <S.FormCard>
+            <S.ThumbIcon />
+            Thanks for reaching out!
+          </S.FormCard>
+        </S.FormContainer>
+      </S.Container>
     );
   }
   return (
     <S.Container>
       <S.FormContainer>
-
         <S.FormCard>
           <form onSubmit={handleSubmit}>
             <div>
@@ -44,10 +45,7 @@ export const ContactUs = () => {
             </button>
           </form>
         </S.FormCard>
-
       </S.FormContainer>
-
-      
     </S.Container>
   );
 };

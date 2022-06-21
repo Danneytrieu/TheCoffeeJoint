@@ -9,6 +9,7 @@ export const Container = styled.section`
   padding: 150px;
   gap: 50px;
   width: 100%;
+  height: 100%;
 `;
 
 export const FormContainer = styled.section`
