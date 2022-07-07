@@ -47,6 +47,7 @@ export const Container = styled.section`
 `;
 export const ProductContainer = styled.div`
   display: flex;
+  align-items: center;
   gap: 70px;
   @media ${device.laptop} {
     flex-direction: column;
@@ -66,13 +67,14 @@ export const ProductCard = styled.div`
   gap: 8px;
   text-align: center;
   cursor: pointer;
-
+  color: var(--color-grey);
   img {
     border-radius: 15%;
     width: 300px;
     height: 300px;
+    transition: all ease 0.2s;
     &:hover {
-      box-shadow: 1px 1px 1px grey;
+      box-shadow: 1px 3px 10px grey;
     }
   }
   h4 {

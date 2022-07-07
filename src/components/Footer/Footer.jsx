@@ -9,10 +9,8 @@ export const Footer = () => {
       <S.FooterContainer>
         {/* column 1 */}
         <div>
-          <a
-            href="/"
-          >
-          <img src={logoImage} alt="" />
+          <a href="/">
+            <img src={logoImage} alt="" />
           </a>
           <h2>
             As part of Yuma Way Cannabis, the staff at The Coffee Joint share a
@@ -83,11 +81,10 @@ export const Footer = () => {
           >
             Oil
           </a>
-         
         </div>
 
         {/* column 4 */}
-        <div>
+        <div className="hideForTablet">
           <span>Contact Info</span>
           <a
             target="_blank"

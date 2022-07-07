@@ -65,21 +65,21 @@ export function BasicTabs() {
             >
               <Tab
                 sx={{
-                  fontSize: "2rem",
+                  fontSize: "1rem",
                 }}
                 label="EDIBLES"
                 {...a11yProps(0)}
               />
               <Tab
                 sx={{
-                  fontSize: "2rem",
+                  fontSize: "1rem",
                 }}
                 label="CONCENTRATES"
                 {...a11yProps(1)}
               />
               <Tab
                 sx={{
-                  fontSize: "2rem",
+                  fontSize: "1rem",
                 }}
                 label="CARTRIDGES"
                 {...a11yProps(2)}

@@ -33,7 +33,7 @@ export const Parallaxes = styled(Parallax)`
 export const FormCard = styled.section`
   min-height: 70%;
   min-width: 40vw;
-  display: flex;
+  display: flex; 
   flex-direction: column;
   text-align: center;
   justify-content: center;

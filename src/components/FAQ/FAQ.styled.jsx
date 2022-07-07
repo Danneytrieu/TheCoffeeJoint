@@ -23,6 +23,9 @@ export const Container = styled.section`
   }
   summary {
     font-size: 2rem;
+    @media ${device.tablet} {
+      font-size: 1rem;
+    }
   }
   article {
     font-size: 1rem;
