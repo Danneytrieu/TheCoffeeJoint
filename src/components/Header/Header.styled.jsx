@@ -85,6 +85,11 @@ export const InfoContainer = styled.section`
       font-weight: 200;
     }
   }
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 1000000
+  }
   /* wrap: icon + text */
   article {
     margin-bottom: 10px;

@@ -1,4 +1,3 @@
-
 import { ParallaxProvider } from "react-scroll-parallax";
 import { AboutUs } from "./components/AboutUs/AboutUs";
 import { Header } from "./components/Header/Header";
@@ -12,19 +11,18 @@ import { ContactUs } from "./components/ContactUs/ContactUs";
 
 
 const App = () => {
-
   return (
-    <ParallaxProvider>
-      <Header />
-      <AboutUs />
-      <Grid />
-      <BasicTabs />
-      <Events/>
-      <FAQ />
-      <ContactUs />
-      <Gallery />
-      <Footer />
-    </ParallaxProvider>
+      <ParallaxProvider>
+        <Header />
+        <AboutUs />
+        <Grid />
+        <BasicTabs />
+        <Events />
+        <FAQ />
+        <ContactUs />
+        <Gallery />
+        <Footer />
+      </ParallaxProvider>
   );
 };
 

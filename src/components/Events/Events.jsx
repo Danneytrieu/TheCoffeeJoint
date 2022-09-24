@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import eventCalendar from "../../assets/images/eventCalendar.png";
+import eventImg from "../../assets/images/event/event.png"
 
 const Container = styled.details`
 margin: 200px 0;
@@ -30,18 +31,19 @@ margin: 200px 0;
 `;
 
 const Events = () => {
-  return (
+  return (<>
     <Container>
       <summary>
         Events Calendar
         <img src={eventCalendar} alt="" />
-        <button></button>
       </summary>
       <div
         className="smgc-calendar-placeholder"
         id="smgc-cal-YTKB9oe0cfrjQesZSPpX"
       ></div>
     </Container>
+    
+    </>
   );
 };
 

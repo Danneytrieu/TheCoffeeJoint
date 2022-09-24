@@ -22,7 +22,11 @@ export const Header = () => {
               </article>
               <article>
                 <S.PhoneIcon />
-                <h4>(720) 583-4657</h4>
+
+                <a href="tel:7205834657">
+                  <h4>(720) 583-4657</h4>
+                </a>
+                
               </article>
               <article>
                 <S.HourIcon />
