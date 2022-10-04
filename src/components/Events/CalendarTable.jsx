@@ -1,10 +1,9 @@
 import React from "react";
 import Calendar from "@ericz1803/react-google-calendar";
 
-const API_KEY = "AIzaSyA_7zq6tXxBT-nhB7BN7NM7z3CYVw_LeCo";
+const API_KEY = "AIzaSyCQI06nQt8o4GO_9dm_cmM35gs9em7i6Xk";
 let calendars = [
-  { calendarId: "danneytrieu@gmail.com" },
-
+  { calendarId: "thecoffeejointevent@gmail.com", color: "#F0C474" },
 ];
 
 class CalendarTable extends React.Component {
