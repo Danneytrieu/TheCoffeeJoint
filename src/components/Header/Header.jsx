@@ -2,6 +2,7 @@ import React from "react";
 import introVideo from "../../assets/videos/weedfarm-1.mp4";
 import * as S from "../Header/Header.styled";
 
+
 export const Header = () => {
   return (
     <>

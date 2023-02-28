@@ -24,7 +24,7 @@ export const ContactUs = () => {
             <div>
               <span>CONTACT US</span>
               <div className="line"></div>
-              <p>Hit us up for event, colaboration, question, or feedbacks!</p>
+              <p>Hit us up for event, collaboration, question, or feedbacks!</p>
             </div>
             <label htmlFor="email"></label>
             <input id="email" type="email" name="email" placeholder="Email" />
