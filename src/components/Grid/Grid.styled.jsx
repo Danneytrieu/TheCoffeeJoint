@@ -32,17 +32,17 @@ export const GridContainer = styled.div`
       "statistic shop"
       "picture picture"
       "instruction instruction"
-      "do dont";
+      "dont do";
   }
   @media ${device.laptop} {
     grid-template-columns: 100%;
     grid-template-areas:
       "video video"
       "statistic statistic "
-      "shop shop"
-      "dont dont"
-      "do do ";
-  } ;
+      "shop shop" 
+      "do do "
+      "dont dont";
+  }
 `;
 // Grid Area:
 const gridArea = {
@@ -61,10 +61,11 @@ export const Statistic = styled.div`
   text-align: center;
   padding: 30px;
   background: var(--color-vanilla);
-  span {
+  a {
     color: var(--color-gold);
     font-family: var(--font-roboto);
-    font-size: clamp(6rem, 8vw, 10rem);
+    font-size: clamp(2rem, 3vw, 6rem);
+    margin-bottom:10px;
   }
   h5 {
     color: var(--color-green);

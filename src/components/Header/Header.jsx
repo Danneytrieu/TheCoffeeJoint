@@ -6,12 +6,13 @@ import * as S from "../Header/Header.styled";
 export const Header = () => {
   return (
     <>
+      <S.AddressBar>1130 Yuma Ct, Denver, CO 80204</S.AddressBar>
       <S.Container>
-        <S.Logo>TCJ.</S.Logo>
+        <S.Image src="/image/logo.png" alt="" width="300" />
         <S.OverLayContainer>
           <S.InfoContainer>
-            <h1>The Coffee Joint</h1>
-            <h3>Consumption Lounge</h3>
+            <h1>Consumption Lounge</h1>
+            <h3>The Coffee Joint</h3>
             <div className="line" />
             <h2>
               Denver's First Licensed Consumption Lounge <br /> since 2018

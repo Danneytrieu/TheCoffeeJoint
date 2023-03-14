@@ -12,6 +12,14 @@ export const Container = styled.header`
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%);
   }
 `;
+export const AddressBar = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: var(--color-gold);
+  color: var(--color-white);
+`;
 export const OverLayContainer = styled.div`
   position: absolute;
   content: "";
@@ -31,14 +39,11 @@ export const Video = styled.video`
   height: 100%;
 `;
 // Logo
-export const Logo = styled.span`
+export const Image = styled.img`
   position: absolute;
-  color: var(--color-white);
   padding: 50px;
-  font-size: clamp(1rem, 2.7vw, 3.8rem);
-  font-weight: 700;
   @media ${device.tablet} {
-    padding: 20px;
+    display:none
   }
 `;
 // Info text section

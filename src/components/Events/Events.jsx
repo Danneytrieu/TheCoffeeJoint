@@ -3,10 +3,8 @@ import styled from "styled-components";
 import eventCalendar from "../../assets/images/eventCalendar.png";
 import CalendarTable from "./CalendarTable";
 
-
-const Container = styled.details`
-margin: 200px 0;
-  display: flex;
+const Container = styled.div`
+  margin: 200px 0;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -17,13 +15,8 @@ margin: 200px 0;
   :hover {
     color: var(--color-gold);
   }
-  summary {
-    /* Disable text highlighter */
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
+  h3 {
+    margin-bottom:30px
   }
   img {
     height: 40px;
@@ -31,16 +24,15 @@ margin: 200px 0;
   }
 `;
 
-
 const Events = () => {
   return (
     <>
       <Container>
-        <summary>
+        <h3>
           Events Calendar
           <img src={eventCalendar} alt="" />
-        </summary>
-        <CalendarTable/>
+        </h3>
+        <CalendarTable />
       </Container>
     </>
   );

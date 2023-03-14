@@ -17,8 +17,14 @@ export const Grid = () => {
         />
       </S.Video>
       <S.Statistic>
-        <span>1st</span>
-        <h5>Denver's First Licensed Consumption Lounge since 2018</h5>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.yumaway.com/locations/menu/17?"
+        >
+          Dispensary
+        </a>
+        <h5>Conveniently located next to 1136 Yuma Dispensary.</h5>
       </S.Statistic>
       <a
         target="_blank"
@@ -36,7 +42,11 @@ export const Grid = () => {
       </a>
       <S.Instruction>
         <span>FIRST TIMER?</span>
-        <p>Checkout our rules</p>
+        <p>
+          Bring your own rig or buy from us.
+          <br />
+          Cash Only!
+        </p>
       </S.Instruction>
       <S.Do>
         <S.DoIcon />
