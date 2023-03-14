@@ -49,7 +49,11 @@ export function BasicTabs() {
 
   return (
     <S.Container>
-      <h3>POPULAR PRODUCTS AT 1136</h3>
+      <h3>
+        1136 YUMA DISPENSARY
+        <br />
+        (located next door)
+      </h3>
       <section>
         <Box sx={{ width: "100%" }}>
           <Box

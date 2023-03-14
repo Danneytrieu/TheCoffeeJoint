@@ -52,9 +52,10 @@ export const Footer = () => {
         {/* column 2 */}
         <div className="hideForTablet">
           <span>About Us</span>
-          <a href="/">Contact Us</a>
-          <a href="/">Direction</a>
-          <a href="/">Terms of Service</a>
+          <a href="mailto:thecoffeejoint@yumaway.com">Contact Us</a>
+          <a href="https://www.google.com/maps/dir/39.7469274,-104.9973032/The+Coffee+Joint+by+Yuma+Way,+1130+Yuma+Ct,+Denver,+CO+80204,+United+States/@39.7376199,-105.0148797,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x876c7f4b51569687:0xb8e67a05179bf2c4!2m2!1d-105.0143988!2d39.7342548">
+            Direction
+          </a>
         </div>
 
         {/* column 3 */}
